@@ -90,6 +90,16 @@
 }
 
 /* end ex-7 */
+.ex-8-img{
+    transition: all 1s;
+}
+.ex-8-img:hover {
+    filter: grayscale(1);
+    filter: sepia(0.7);
+    border-radius: 2rem;
+}
+
+/* end ex-8 */
 
 .ex-9-img {
     margin: 50px 100px;

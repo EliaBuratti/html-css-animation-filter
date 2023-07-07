@@ -170,6 +170,8 @@
 }
 
 /* end ex-11 */
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -200,4 +202,61 @@
     height: 20px;
 }
 
+/* ex-12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: ex_12_top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: linear;
+
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: ex_12_bottom;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transition: linear;
+
+}
+
+@keyframes ex_12_top {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    50% {
+        top:-10px;
+        left: calc(100% - 60px);
+    }
+
+    100% {
+        top: -10px;
+        left: 10%;
+
+    }
+
+}
+
+@keyframes ex_12_bottom {
+    0% {
+        bottom: -10px;
+        right: 10%;
+    }
+
+    50% {
+        bottom:-10px;
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        bottom: -10px;
+        right: 10%;
+
+    }
+    
+}
+
+/* end ex-12 */
 
